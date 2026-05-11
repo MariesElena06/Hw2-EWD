@@ -1,0 +1,70 @@
+1. 
+	Paragraful A primește proprietăți de la selectorul p ce este un element selector. Astfel, primește următoarele proprietăți: 
+color: gray;
+font-size: 1rem; 
+font-family: Georgia, serif;
+line-height: 1.4; 
+padding: 4px 0;
+
+	Paragraful B primește proprietăți de la selectorii p (element selector) și .info (class selector). .info are prioritate mai mare decât p (class selector > element selector), iar, astfel, paragraful primește următoarele proprietăți: 
+color: steelblue; (din .info) 
+font-size: 1.25rem; (din .info) 
+background-color: #e8f4fd; (din .info)
+border-left: 5px solid steelblue; (din .info) 
+line-height: 1.4 (din .info),
+padding: 8px 14px; (din .info)
+font-family: Arial, sans-serif; (din p)
+
+	Paragraful C primește proprietăți de la selectorii p (element selector) și #warning (ID selector). #warning are prioritate mai mare decât p (id selector > element selector), iar, astfel, paragraful primește următoarele proprietăți:
+color: darkred; (din #warning)
+font-size: 0.8rem; (din #warning)
+font-style: italic; (din #warning)
+text-transform: uppercase; (din #warning)
+letter-spacing: 0.15em; (din #warning)
+border: 2px dashed darkred; (din #warning)
+padding: 10px; (din #warning)
+background-color: #fff0f0; (din #warning)
+font-family: 'Courier New', monospace; (din #warning)
+line-height: 1.4; (din p)
+	
+	Paragraful D primește proprietăți de la selectorii p (element selector), .info (class selector), #warning (ID selector) și #warning.info (selector combinat pentru ID și class). Cum ID selector + class selector > ID selector > class selector > element selector, paragraful va primi următoarele proprietăți:
+color: darkorange; (din #warning.info)
+background-color: #fff7e0; (din #warning.info)
+border: 2px solid darkorange; (din #warning.info)
+font-size: 1.1rem; (din #warning.info)
+font-style: normal; (din #warning.info)
+letter-spacing: 0.03em; (din #warning.info)
+text-transform: uppercase; (din #warning)
+padding: 10px; (din #warning)
+font-family: 'Courier New', monospace; (din #warning)
+line-height: 1.4; (din p)
+
+2.
+	Paragraful D primește proprietăți de la 4 selectori (p, .info, #warning și #warning.info). 
+
+	Toți cei 4 selectori definesc color:
+p -> color: gray;
+.info -> color: steelblue;
+#warning -> color: darkred;
+#warning.info -> darkorange;
+	Culoarea aleasă pentru paragraful D va fi darkorange deoarece #warning.info este selectorul cel mai puternic (ID selector + class selector > ID selector > class selector > element selector).
+
+	De asemenea, .info și #warning definesc font-family:
+.info -> font-family: Arial;
+#warning -> font-family: Courier New;
+	Se va alege Courier New deoarece #warning (ID selector) este prioritar față de .info (class selector).
+
+
+3. 
+	În CSS extern (style.css), h1 va primi următoarele proprietăți:
+color: green;
+font-style: italic;
+padding: 10px;
+	În CSS intern (din <style>), h1 va primi următoarea proprietate: color: blue;
+
+	Într-un final, h1 va primi următoarele proprietăți:
+color: blue; (din CSS intern)
+font-style: italic; (din CSS extern)
+padding: 10px; (din CSS extern)
+
+	Ambele reguli se aplică pe același h1. Color a fost suprascrisă deoarece CSS-ul intern este încărcat după cel extern.

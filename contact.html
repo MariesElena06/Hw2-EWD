@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title> Study Group and Peer Tutoring Hub - Contact </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        form {
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+        }
+
+
+
+        button:hover {
+            transform: scale(1.03);
+            outline: 3px solid white;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link"> Skip to main content </a>
+
+    <header>
+        <h1> Feedback </h1>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <p class="nav_text"> Navigate around the pages </p>
+
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="about.html"> About us </a></li>
+            <li><a href="overview.html"> Overview </a></li>
+            <li><a href="data.html"> Data </a></li>
+            <li><a href="chatbot.html"> Chatbot </a></li>
+            <li><a href="contact.html" class="active"> Contact/Feedback </a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <h2> Contact form </h2>
+    
+        <form class="form">
+            <div class="two-columns">
+                <fieldset class="fieldset">
+                    <legend> Your details </legend>
+
+                    <div>
+                        <label for="name"> Full name (required) </label>
+                        <input type="text" id="name" name="name" required class="input_field">
+                    </div>
+
+                    <div>
+                        <label for="email"> Email (required) </label>
+                        <input type="email" id="email" name="email" required class="input_field">
+                    </div>
+
+                    <div>
+                        <label for="number"> Phone number (required) </label>
+                        <input type="tel" id="number" name="number" required class="input_field">
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend> Your message </legend>
+
+                    <div>
+                        <label for="subject"> Subject (required) </label>
+                        <input type="text" id="subject" name="subject" required class="input_field ">
+                    </div>
+
+                    <div>
+                        <label for="msg"> Message (required) </label>
+                        <textarea id="msg" name="message" rows="5" required class="input_field "></textarea>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="two-columns">
+                <fieldset class="fieldset">
+                    <legend> Which topic do you want to sign up for? </legend>
+
+                    <div>
+                        <label for="math"> Mathematics </label>
+                        <input type="radio" id="math" name="topic" value="math" required>
+                    </div>
+                
+                    <div>
+                        <label for="physics"> Physics </label>
+                        <input type="radio" id="physics" name="topic" value="physics">
+                    </div>
+                
+                    <div>
+                        <label for="chemistry"> Chemistry </label>
+                        <input type="radio" id="chemistry" name="topic" value="chemistry">
+                    </div>
+                
+                    <div>
+                        <label for="programming"> Programming </label>
+                        <input type="radio" id="programming" name="topic" value="programming">
+                    </div>
+                
+                    <div>
+                        <label for="history"> History </label>
+                        <input type="radio" id="history" name="topic" value="history">
+                    </div>
+                
+                    <div>
+                        <label for="literature"> Literature </label>
+                        <input type="radio" id="literature" name="topic" value="literature">
+                    </div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                    <legend> How did you find out about this tutoring programme? </legend>
+
+                    <div>
+                        <label for="hear-course"> Courses </label>
+                        <input type="radio" id="hear-course" name="source" value="course" required>
+                    </div>
+                
+                    <div>
+                        <label for="hear-friends"> Friends </label>
+                        <input type="radio" id="hear-friends" name="source" value="friends">
+                    </div>
+                
+                    <div>
+                        <label for="hear-search"> Search / Web sites </label>
+                        <input type="radio" id="hear-search" name="source" value="search">
+                    </div>
+                
+                    <div>
+                        <label for="hear-other"> Other </label>
+                        <input type="radio" id="hear-other" name="source" value="other">
+                    </div>
+                </fieldset>
+            </div>
+
+            <button type="submit" class="button" style="display:block; margin: 0 auto"> Send message </button>
+        </form>
+    </main>
+
+    <footer>
+        <p> Study Group and Peer Tutoring Hub - Mărieș Elena-Maria - 2026 </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+.overview-layout {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+
+    display: grid;
+    gap: 20px;
+}
+
+.profile-section,
+.skills-section,
+.projects-section,
+.contact-section {
+    background-color: #c8e3fe;
+
+    padding: 20px;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    justify-content: center;
+}
+
+.skill-box {
+    background-color: #e0efff;
+
+    padding: 12px 18px;
+    border-radius: 10px;
+
+    font-weight: bold;
+    color: #0c499a;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.cards-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background-color: #e0efff;
+
+    padding: 20px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.skill-box:hover,
+.card:hover {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+.featured-card {
+    background-color: #90c0ff;
+    color: white;
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+
+.profile-section:hover,
+.skills-section:hover,
+.projects-section:hover,
+.contact-section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 700px) {
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overview-layout {
+        padding: 10px;
+    }
+}
