@@ -14,7 +14,7 @@ This is HW2, an extension of HW1, including responsive design, improved CSS, a F
 - chatbot.html, chatbot.css, chatbot.js - Interactive chatbot  
 - contact.html - Contact/feedback form  
 - card.html, card.css - Business card page
-- car.png - Image used for the business card page  
+- car.jpg - Image used for the business card page  
 - overview.css - CSS for overview page  
 - style.css - Main stylesheet
 - figma.png - Image which represents the Figma authentication UI 
